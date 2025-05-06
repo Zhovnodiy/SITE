@@ -1,0 +1,348 @@
+﻿:root {
+    --background-color: #000000;
+    --header-background: #1a1a1a;
+    --text-color: #ffffff;
+    --title-color: #ffd700;
+    --button-background: #007bff;
+    --card-border: #333333;
+    --search-background: #333333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.top-panel {
+    background-color: #111111;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Для позиціонування пошуку */
+  
+}
+
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; /* Змініть це значення на потрібне */
+    max-width: 90%; /* Додайте це для адаптації на малих екранах */
+    top : 20px;
+}
+.right-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Переміщує всю групу вправо */
+    gap: 15px; /* Відступ між іконками та кнопкою */
+}
+
+.icons {
+    display: flex;
+    gap: 10px; /* Відступи між іконками */
+    
+}
+
+.exit-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+  
+}
+
+header {
+    background-color: var(--header-background);
+    padding: 20px 40px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.title {
+    color: var(--title-color);
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 20px;
+}
+
+    nav ul li {
+        margin: 0 15px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        nav ul li:hover {
+            text-decoration: underline;
+            color: var(--title-color);
+        }
+
+.search-bar {
+    flex-grow: 1;  /* Елемент розтягується, займаючи весь вільний простір */
+    margin: 0 20px;  /* Відступи зліва і справа по 20px */
+}
+
+    .search-bar input {
+        width: 100%; /* Ширина 100% від батьківського контейнера */
+        max-width: none; /* Максимальна ширина 300px */
+        padding: 8px; /* Внутрішні відступи */
+        border: none; /* Без рамки */
+        border-radius: 5px; /* Закруглені кути */
+        background-color: var(--search-background); /* Колір фону */
+        color: var(--text-color); /* Колір тексту */
+        font-size: 14px; /* Розмір шрифту */
+    }
+
+        .search-bar input::placeholder {
+            color: #888888;
+        }
+
+.buy-orbs {
+    background-color: var(--button-background);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+    .buy-orbs span {
+        margin-right: 5px;
+    }
+
+main {
+    padding: 20px 40px;
+}
+
+.featured h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fire-icon {
+    margin-right: 10px;
+    color: #ff4500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0; /* Відступи зверху та знизу */
+}
+
+.card {
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #1a1a1a;
+    transition: box-shadow 0.3s ease; /* Для тіні */
+   
+}
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Плавна анімація */
+        height: 330px;
+        object-position: center;
+    }
+    .card:hover img {
+        transform: scale(1.05);
+        filter: brightness(1);
+    }
+.card {
+    overflow: hidden; /* Ховає частини зображення, що виходять за межі */
+    position: relative;
+}
+    .card:hover {
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+    }
+
+.card-content {
+    padding: 10px;
+}
+
+    .card-content h3 {
+        color: #ffd700;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+        margin: 5px 0;
+        color: #cccccc;
+    }
+
+    .card-content button {
+        background-color: #800080;
+        color: var(--text-color);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4500;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.actual-builds {
+    margin-top: 40px;
+   
+    align-items: center;
+}
+
+    .actual-builds h2 {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+.cross-icon {
+    margin-right: 10px;
+    color: #ff4500;
+}
+.builds-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Відступ між заголовком і картками */
+}
+.actual-builds h2 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Скидаємо стандартні відступи заголовка */
+}
+
+.actual-builds a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+    /* Когда нужно показать */
+    .modal.show {
+        display: flex;
+    }
+
+.modal-content {
+    background-color: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 8px;
+    width: 320px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    color: #fff;
+}
+
+    .modal-content h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0 0;
+    background: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+    .links a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+    }

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path of Exile - LOOTKEEPER</title>
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+    
+
+    <!-- Модальное окно -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Авторизация</h2>
+            <form>
+                <label for="email">E‑mail*</label>
+                <input type="email" id="email" placeholder="mail@mail.ru" required>
+                <label for="password">Пароль*</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Пароль" required>
+                    <span class="toggle-password">👁️</span>
+                </div>
+                <button type="submit" class="submit-btn">Войти</button>
+                <div class="links">
+                    <a href="#">Регистрация</a> | <a href="#">Забыли пароль?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="top-panel">
+        <!-- Поле пошуку по центру -->
+        <div class="search-bar">
+            <input type="text" placeholder="Пошук на сайті">
+        </div>
+
+
+        <!-- Група елементів праворуч -->
+        <div class="right-group">
+            <div class="icons">
+                <span>☀️</span>
+                <span>🎥</span>
+                <span>📤</span>
+            </div>
+            <button id="loginBtn" class="exit-btn">Ввійти</button>
+        </div>
+    </div>
+    <header>
+        <div class="header-content">
+            <div class="title">LOOTKEEPER</div>
+            <nav>
+                <ul>
+                    <li>Білди</li>
+                    <li>Новини</li>
+                    <li>Гайди</li>
+                </ul>
+            </nav>
+
+            <button class="buy-orbs"><span>🔵</span> Купить сфери PoE</button>
+        </div>
+    </header>
+    <main>
+        <section class="featured">
+            <h2><span class="fire-icon">🔥</span> Останні статті та оновлення</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://i.imgur.com/00qu47m.jpeg" alt="Settlers Challenge">
+                    <div class="card-content">
+                        <h3>Испытания Поселенцы</h3>
+                        <p>Катпура 3.25</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guides.lootkeeper.com/media/articles/rubaka-vihr-ciklon-sleer.jpg" alt="Whirlwind Slayer">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака через Вихрь без оружия</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guides.lootkeeper.com/media/articles/lk-preview_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_wun452y.jpg" alt="Lightning Strike Slayer">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака Удар Молнии</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.guides.lootkeeper.com/media/articles/vedma-nekromant-skelety-magi-000-min.jpg" alt="Whirlwind Slayer 2">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака через Вихрь без оружия</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.guides.lootkeeper.com/media/articles/Spectromancer-preview.jpg" alt="Lightning Strike Slayer 2">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака Удар Молнии</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guides.lootkeeper.com/media/articles/preview-txt-guide.jpg" alt="Archmage Hierophant">
+                    <div class="badge">Новий активувати ✖</div>
+                    <div class="card-content">
+                        <h3>[3.25] Переодягнт Архімаг</h3>
+                        <p>Колір Льоду. Білд на Жреця </p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="actual-builds">
+            <div class="builds-header">
+                <h2><span class="cross-icon">✖</span> Актуальні білди</h2>
+                <a href="#">Всі білди</a>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://i.imgur.com/00qu47m.jpeg" alt="Settlers Challenge">
+                    <div class="card-content">
+                        <h3>Испытания Поселенцы</h3>
+                        <p>Катпура 3.25</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guides.lootkeeper.com/media/articles/rubaka-vihr-ciklon-sleer.jpg" alt="Whirlwind Slayer">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака через Вихрь</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://guides.lootkeeper.com/media/articles/lk-preview_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_wun452y.jpg" alt="Lightning Strike Slayer">
+                    <div class="card-content">
+                        <h3>[3.25] Рубака Удар Молнии</h3>
+                        <p>Більд на Дуелянта</p>
+                        <button>Більд</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/JavaScript.js"></script>
+</body>
+
+</html>
